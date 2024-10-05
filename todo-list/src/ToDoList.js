@@ -2,11 +2,13 @@ import { Component } from 'react';
 
 export class ToDoList extends Component {
     state = {
-        
+        input: "",
+        list: []
     }
 
     onChangeEvent(event) {
-        console.log(event.target.value);
+        this.setState({input: event})
+        console.log(event);
         
     }
 
@@ -16,7 +18,8 @@ export class ToDoList extends Component {
                 <input 
                 type="text" 
                 placeholder='What do you want to do?'
-                onChange={ this.onChangeEvent } />
+                onChange= {(event) => { this.onChangeEvent(event.target.value)}}
+                value= { this.state.input }/>
             </div>
         )
     }
