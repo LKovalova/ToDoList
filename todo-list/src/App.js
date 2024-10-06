@@ -6,11 +6,16 @@ import { ToDoList } from "./ToDoList";
 function App() {
   return (
     <div className="App">
-      <img src={ image } width="400px" alt="To Do List" />
-
-      <h1>To Do List</h1>
+      <div className="container">
+        <img src={image} width="280px" alt="To Do List" />
+      </div>
+      <div className="container">
+        <h1>To Do List</h1>
+      </div>
       <ToDoList />
-      <img src={ imageDone } width="400px" alt="Done" />
+      <div className="container">
+        <img src={imageDone} width="300px" alt="Done" />
+      </div>
     </div>
   );
 }

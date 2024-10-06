@@ -1,26 +1,66 @@
 body {
   background-color: #8EACCD;
+  font-family: "Afacad Flux", sans-serif;
+  color: #33323a;
 }
 
 .App {
     background-color: #FEF9D9;
     min-height: 80vh;
-    width: 600px;
+    width: 700px;
     margin: 20px auto;
+    border-radius: 10px;
 }
 
-.crossed {
-  text-decoration: line-through 2px red;
-  background-color: #f0f0f0;
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+ul, li, input, .btn {
+  font-family: "Afacad Flux", sans-serif;
+  color: #33323a;
+  font-size: 20px; 
+  padding: 10px;
+  margin: 0;
 }
 
 ul, li{
   list-style-type: none;
-  padding: 10px;
-  margin: 0;
-  font-family: "Montserrat", sans-serif;   
+  text-align: center;
 }
 
 li img {
   margin-right: 6px; 
+}
+
+.btn, input {
+  width: 50%;
+  border: 2px solid #ecebeb;
+  border-radius: 10px;
+  }
+
+.crossed {
+  text-decoration: line-through 2px #ff9859;
+  background-color: #ecebeb;
+}
+
+.add {
+  background-color: #c1c181;
+  margin-top: 5px;
+}
+
+.delete {
+  background-color: #ff9859;
+  margin-bottom: 5px;
+}
+
+input {
+  flex: 1;
+  margin: 10px;
+}
+
+img{
+  border-radius:  45%;
+  margin: 2%;
 }
