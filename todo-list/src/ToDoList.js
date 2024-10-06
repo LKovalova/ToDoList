@@ -1,4 +1,5 @@
 import { Component } from "react";
+import check from "./logo.png";
 
 export class ToDoList extends Component {
   state = {
@@ -11,9 +12,18 @@ export class ToDoList extends Component {
   }
 
   addItem(input) {
-    let listArray = this.state.list;
-    listArray.push(input);
-    this.setState({ list: listArray, input: "" });
+    if (input === "") {
+      alert("Please enter a task");
+    } else {
+      let listArray = this.state.list;
+      listArray.push(input);
+      this.setState({ list: listArray, input: "" });
+    }
+  }
+
+  crossedWord(event) {
+    const li = event.target;
+    li.classList.toggle("crossed");
   }
 
   render() {
@@ -34,7 +44,10 @@ export class ToDoList extends Component {
         </div>
         <ul>
           {this.state.list.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li onClick={this.crossedWord} key={index}>
+              <img src={check} width="25px" />
+              {item}
+            </li>
           ))}
         </ul>
       </div>
