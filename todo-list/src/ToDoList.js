@@ -26,6 +26,12 @@ export class ToDoList extends Component {
     li.classList.toggle("crossed");
   }
 
+  deleteItem() {
+    let listArray = this.state.list;
+    listArray = [];
+    this.setState({list: listArray})
+  }
+
   render() {
     return (
       <div>
@@ -50,6 +56,7 @@ export class ToDoList extends Component {
             </li>
           ))}
         </ul>
+        <button onClick={() => this.deleteItem()}>Delete</button>
       </div>
     );
   }
