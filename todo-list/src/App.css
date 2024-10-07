@@ -1,15 +1,16 @@
 body {
-  background-color: #8EACCD;
+  background-color: #84abc8;
   font-family: "Afacad Flux", sans-serif;
   color: #33323a;
 }
 
 .App {
-    background-color: #FEF9D9;
-    min-height: 80vh;
-    width: 700px;
-    margin: 20px auto;
-    border-radius: 10px;
+  background-color: #FEF9D9;
+  min-height: 80vh;
+  width: 700px;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 2%;
 }
 
 .container{
@@ -27,7 +28,6 @@ ul, li, input, .btn {
 
 ul, li{
   list-style-type: none;
-  text-align: center;
 }
 
 li img {
@@ -38,10 +38,10 @@ li img {
   width: 50%;
   border: 2px solid #ecebeb;
   border-radius: 10px;
-  }
+}
 
 .crossed {
-  text-decoration: line-through 2px #ff9859;
+  text-decoration: line-through 2px #d96952;
   background-color: #ecebeb;
 }
 
@@ -50,9 +50,17 @@ li img {
   margin-top: 5px;
 }
 
+.add:hover{
+  background-color: #9aa048;
+}
+
 .delete {
   background-color: #ff9859;
   margin-bottom: 5px;
+}
+
+.delete:hover{
+  background-color: #d96952;
 }
 
 input {
@@ -60,7 +68,6 @@ input {
   margin: 10px;
 }
 
-img{
+img {
   border-radius:  45%;
-  margin: 2%;
 }
