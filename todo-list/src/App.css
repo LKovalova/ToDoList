@@ -41,8 +41,14 @@ li img {
 }
 
 .crossed {
-  text-decoration: line-through 2px #d96952;
   background-color: #ecebeb;
+  text-decoration-line: line-through;
+  text-decoration-color: #d96952;
+  text-decoration-thickness: 2px;
+
+  -webkit-text-decoration-line: line-through;
+  -webkit-text-decoration-color: #d96952;
+  -webkit-text-decoration-thickness: 2px;
 }
 
 .add {
